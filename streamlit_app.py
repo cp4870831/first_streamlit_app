@@ -76,20 +76,20 @@ try:
 # write your own comment - what does this do?
 #streamlit.dataframe(fruityvice_normalized)
 
-streamlit.stop()
+#streamlit.stop()
 
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("select * from fruit_load_list")
-my_data_rows = my_cur.fetchall()
-streamlit.header("the fruit load list contains:")
-streamlit.dataframe(my_data_rows)
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#my_cur = my_cnx.cursor()
+#my_cur.execute("select * from fruit_load_list")
+#my_data_rows = my_cur.fetchall()
+#streamlit.header("the fruit load list contains:")
+#streamlit.dataframe(my_data_rows)
 
 
-fruit_choices = streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('Thanks for adding: ', fruit_choices)
-import requests
-add_my_fruit_ = requests.get("https://fruityvice.com/api/fruit/" + fruit_choices)
+#fruit_choices = streamlit.text_input('What fruit would you like to add?','jackfruit')
+#streamlit.write('Thanks for adding: ', fruit_choices)
+#import requests
+#add_my_fruit_ = requests.get("https://fruityvice.com/api/fruit/" + fruit_choices)
 
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
