@@ -51,7 +51,7 @@ try:
          streamlit.error("please select a fruit to get information.")
     else:
           back_from_function = get_fruityvice_data(fruit_choice)
-          streamlit.dataframe(back_from_function);
+          streamlit.dataframe(back_from_function)
     
 #try:
  #   fruit_choice = streamlit.text_input('What fruit would you like information about?')
@@ -93,4 +93,3 @@ try:
 # add_my_fruit_ = requests.get("https://fruityvice.com/api/fruit/" + fruit_choices)
 
 # my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-
