@@ -39,7 +39,7 @@ try:
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
-except:
+    except:
    print("An exception")
 
 streamlit.header("the fruit load list contains")
