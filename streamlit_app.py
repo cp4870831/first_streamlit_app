@@ -93,3 +93,4 @@ try:
 # add_my_fruit_ = requests.get("https://fruityvice.com/api/fruit/" + fruit_choices)
 
 # my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+;
